@@ -1,0 +1,46 @@
+
+html {
+	font-family: sans-serif;
+	font-size: 62.5%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+#home {
+	background: url(./Pics/Beatles.jpg) no-repeat 50% 50%;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	display: block;
+	height: auto;
+	padding-top: 350px; /* This is the spacer before the Main Title Logo */
+	padding-bottom: 500px; /* This is the spacer after the Main Title logo */
+	color: #fff;
+}
+
+.head-main {
+	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+	font-variant: small-caps;
+	color: #fff;
+	letter-spacing: 5pt;
+	word-spacing: 21pt;
+	font-size: 4.5cm;
+	text-align: left;
+	font-family: impact, sans-serif;
+	line-height: 2;
+	font-weight: 900;
+	border: 5px double #fff;
+	padding: 10px;
+}
+
+.head-sub-main {
+	font-size: 23px;
+	font-weight: 500px;
+	padding: 50px 20px 10px 20px;
+	border: 1px dotted #fff;
+	padding: 5px;
+}

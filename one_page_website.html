@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The Rooftop Concert</title>
+	</head>
+
+
+	<body>
+		<!--HOME-->
+		<div Id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">The Rooftop Concert</span>
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+
+		<!-- VIDEO -->
+		<section>
+			<h2>Beatles Last Performance</h2>
+			<div id="video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/w1tpxdZa1R0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</section>
+		<!-- END VIDEO -->
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="./Pics/Beatles.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="./Pics/Beatles2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="./Pics/Beatles3.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="./Pics/Beatles5.jpg" style="width:100%">
+				</div>
+			</div>
+		</div>
+		<!-- END GALLERY -->
+
+		<!-- ANIMATION -->
+		<style>
+			#container {
+				width: 400px;
+				height: 400px;
+				position: relative;
+				background: yellow;
+			}
+			#animate {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				background-color: red;
+			}
+		</style>
+
+		<p>
+			<button onclick="myMove()">Click Me</button>
+		</p>
+
+		<div id="container">
+			<div id="animate"></div>
+		</div>
+
+		<script>
+			function myMove() {
+				let id = null;
+				const elem = document.getElementById("animate");
+				let pos = 0;
+				clearInterval(id);
+				id = setInterval(frame, 5);
+				function frame() {
+					if (pos == 350) {
+						clearInterval(id);
+					} else {
+						pos++;
+						elem.style.top = pos + "px";
+						elem.style.left = pos + "px";
+					}
+				}
+			}
+		</script>
+		<!-- END ANIMATION -->
+	</body>
+		
+
+</html>
